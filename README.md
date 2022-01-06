@@ -5,7 +5,7 @@ Criar um aplicativo de filmes utilizando Firebase como API
 
 # Cadastro de Usuário
 
-Nome
+Nome</br>
 Email
 Senha
 Foto
