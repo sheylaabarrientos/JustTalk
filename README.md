@@ -6,9 +6,9 @@ Criar um aplicativo de filmes utilizando Firebase como API
 # Cadastro de Usuário
 
 Nome</br>
-Email
-Senha
-Foto
+Email</br>
+Senha</br>
+Foto</br>
 
 # Login
 
@@ -24,16 +24,16 @@ Nome / Foto / Destaques / Temas
 
 # Destaques
 
-Temas ordenados pela quantidade de usuários inscritos;
-Aplicar animação scroll;
+Temas ordenados pela quantidade de usuários inscritos;</br>
+Aplicar animação scroll;</br>
 Deve conter a imagem do tema, titulo e quantidade de usuários inscritos;
 
 # Temas 
 
-A tela de temas deverá dar acesso ao chat ao clicar na imagem;
+A tela de temas deverá dar acesso ao chat ao clicar na imagem;</br>
 Deve conter a imagem do tema, titulo e quantidade de usuários inscritos;
 
 # Chat
 
-O chat permite que o usuário possa enviar e visualizar mensagens de outros usuários, podendo assim interagir e trocar experiências;
+O chat permite que o usuário possa enviar e visualizar mensagens de outros usuários, podendo assim interagir e trocar experiências;</br>
 Deve conter a imagem do tema, titulo e quantidade de usuários inscritos;
