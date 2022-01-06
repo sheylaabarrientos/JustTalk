@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_gray">
+
+        <TextView
+            android:id="@+id/welcome_textView"
+            style="@style/textStyleSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_32"
+            android:contentDescription="@string/welcome"
+            android:gravity="start"
+            android:text="@string/welcome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/username_textView"
+            style="@style/textStyleTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_8"
+            android:contentDescription="@string/user_photo_title"
+            android:gravity="start"
+            android:text="@string/user"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/welcome_textView" />
+
+        <ImageView
+            android:id="@+id/image_photo_profile_imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            app:cornerRadius="50dp"
+            app:layout_constraintBottom_toBottomOf="@id/username_textView"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/destach_textView"
+            style="@style/textStyleTitleMoreOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_32"
+            android:contentDescription="@string/welcome"
+            android:gravity="start"
+            android:text="@string/highlights"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/username_textView" />
+
+        <TextView
+            android:id="@+id/see_all_textView"
+            style="@style/textStyleEnter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:contentDescription="@string/welcome"
+            android:gravity="start"
+            android:text="@string/see_all"
+            app:layout_constraintBottom_toBottomOf="@+id/destach_textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/destach_textView" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/highlights_recyclerView"
+            android:layout_width="364dp"
+            android:layout_height="223dp"
+            android:layout_marginTop="@dimen/margin_24"
+            android:layout_marginHorizontal="@dimen/margin_32"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/destach_textView"
+            tools:listitem="@layout/item_highlights" />
+
+        <TextView
+            android:id="@+id/themes_textView"
+            style="@style/textStyleTitleMoreOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_24"
+            android:contentDescription="@string/welcome"
+            android:gravity="start"
+            android:text="@string/themes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/highlights_recyclerView" />
+
+        <TextView
+            android:id="@+id/see_all_bottom_textView"
+            style="@style/textStyleEnter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:contentDescription="@string/welcome"
+            android:gravity="start"
+            android:text="@string/see_all"
+            app:layout_constraintBottom_toBottomOf="@id/themes_textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/themes_textView" />
+
+        <ProgressBar
+            android:id="@+id/dashboard_progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:indeterminateTint="@color/blue_medium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/themes_textView">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/themes_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginHorizontal="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_24" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

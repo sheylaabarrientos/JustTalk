@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="1"
+        android:background="@color/white_gray"
+        tools:ignore="MissingDefaultResource">
+
+        <ImageView
+            android:id="@+id/home_background_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="500dp"
+            android:background="@drawable/splashscreen"
+            android:contentDescription="@string/image_splash_screen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/home_title_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_92"
+            android:alpha="0.65"
+            android:contentDescription="@string/app_name"
+            android:fontFamily="@font/gilroy_extrabold"
+            android:gravity="center"
+            android:letterSpacing="0.05"
+            android:text="@string/app_name"
+            android:textColor="@color/white_gray"
+            android:textSize="@dimen/extraBigText_58"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/home_description_textView"
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_24"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:contentDescription="@string/home_fragment_description"
+            android:fontFamily="@font/gilroy_regular"
+            android:letterSpacing="0.03"
+            android:lineSpacingExtra="4dp"
+            android:text="@string/home_fragment_description"
+            android:textAlignment="center"
+            android:textColor="@color/white_gray"
+            android:textSize="@dimen/tinyText_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.58"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_title_textView" />
+
+        <ImageView
+            android:id="@+id/splash_screen_gradient_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="116dp"
+            android:layout_marginTop="@dimen/margin_172"
+            android:background="@drawable/splashscreen_gradient"
+            android:contentDescription="@string/image_background_home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_description_textView" />
+
+        <TextView
+            android:id="@+id/home_enter_create_textView"
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:contentDescription="@string/home_fragment_call_to_action"
+            android:fontFamily="@font/gilroy_regular"
+            android:text="@string/home_fragment_call_to_action"
+            android:textAlignment="center"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/tinyText_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/splash_screen_gradient_imageView" />
+
+        <TextView
+            android:id="@+id/home_has_account_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_32"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:contentDescription="@string/description_enter"
+            android:fontFamily="@font/gilroy_bold"
+            android:text="@string/already_has_account"
+            android:textAlignment="center"
+            android:textColor="@color/blue_medium"
+            android:textSize="@dimen/tinyText_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_register_appCompatButton" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/home_register_appCompatButton"
+            android:layout_width="360dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_24"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:background="@drawable/gradient_button"
+            android:contentDescription="@string/button_start"
+            android:fontFamily="@font/gilroy_bold"
+            android:letterSpacing="0"
+            android:text="@string/home_fragment_lets_start"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/smallText_18"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_enter_create_textView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

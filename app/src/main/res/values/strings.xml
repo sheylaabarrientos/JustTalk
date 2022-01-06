@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">Just Talk</string>
+    <string name="email_fragment_title">E o seu email?</string>
+    <string name="email_fragment_description">Preencha seus dados para criarmos sua conta.</string>
+    <string name="backbutton_content_description">backbutton</string>
+    <string name="next">Avançar</string>
+    <string name="has_account">Já possui conta?</string>
+    <string name="enter">Entrar</string>
+    <string name="password_fragment_title">Agora uma senha</string>
+    <string name="password_fragment_description">Preencha uma senha para criarmos sua conta</string>
+    <string name="password_fragment_max_characters">Mínimo 6 dígitos e no Máximo 7 digitos</string>
+    <string name="divider">divider</string>
+    <string name="user_photo_title">Foto de perfil</string>
+    <string name="user_photo_description">Vamos adicionar uma foto?</string>
+    <string name="user_photo_content_description">Clique para adicionar uma foto de sua galeria e imagens</string>
+    <string name="finish">Concluir</string>
+    <string name="username_fragment_title">Qual seu nome?</string>
+    <string name="username_fragment_description">Preencha seus dados para criarmos sua conta.</string>
+    <string name="home_fragment_description">Não desafie seus problemas sozinho(a), converse com pessoas ou profissionais que já passaram por algo parecido.</string>
+    <string name="home_fragment_call_to_action">Entrar ou criar conta</string>
+    <string name="already_has_account">Já possuo conta</string>
+    <string name="home_fragment_lets_start">Vamos começar?</string>
+    <string name="arrow_back_button">Botão com a imagem de uma seta para voltar a tela anterior</string>
+    <string name="button_conclude">Clique em concluir para enviar os dados e criar novo usuário</string>
+    <string name="description_enter">Clique aqui para entrar caso já possua um usuário cadastrado</string>
+    <string name="button_next">Clique para avançar para a próxima tela</string>
+    <string name="input_email">Digite seu email.</string>
+    <string name="image_splash_screen">Imagem de fundo céu com nuvens brancas</string>
+    <string name="button_start">Clique para começar e cadastrar um novo usuário</string>
+    <string name="image_background_home">Imagem de fundo com degradê</string>
+    <string name="input_full_name">Digite seu nome e sobrenome.</string>
+    <string name="error_password_toast">Por favor insira uma senha com no minimo 6 Digitos</string>
+    <string name="error_email_toast"> Por favor insira um e-mail valido ou que não esteja em uso </string>
+    <string name="error_username_toast">Por favor insira nome completo</string>
+    <string name="error_photo_toast">Por favor insira uma foto ao seu perfil</string>
+    <string name="register_success_toast">Usuário cadastrado com Sucesso!</string>
+    <string name="already_used_email_toast">Este e-mail já está sendo utilizado</string>
+    <string name="welcome">Bem vindo</string>
+    <string name="user">Usuário</string>
+    <string name="more">Mais</string>
+    <string name="chat">chat</string>
+    <string name="home">Início</string>
+    <string name="click_on_chat">Clique para abrir o chat</string>
+    <string name="retrieve_password_success">Te enviamos um email de recuperação</string>
+    <string name="send">Enviar</string>
+    <string name="inform_your_email">Informe seu email para enviarmos sua nova senha.</string>
+    <string name="retrieve_password">Recuperar senha</string>
+    <string name="error_toast">E-mail invalido ou inexistente</string>
+    <string name="more_inform_about_the_application">Mais informações sobre o aplicativo</string>
+    <string name="more_options">Mais opções</string>
+    <string name="terms_of_use">Termos de Uso</string>
+    <string name="privacy_policies">Políticas de Privacidade</string>
+    <string name="get_out">Sair</string>
+    <string name="group">Grupos</string>
+    <string name="search">search</string>
+    <string name="logout">Sair</string>
+    <string name="privacy_policy">Política de Privacidade</string>
+    <string name="use_terms">Termos de Uso</string>
+    <string name="more_options_app">Mais opções sobre o aplicativo</string>
+    <string name="login">Entrar</string>
+    <string name="forgot_password">Esqueci a senha</string>
+    <string name="password">Senha</string>
+    <string name="email">Email</string>
+    <string name="login_fragment_subtitle">Informe seu email e senha para entrar</string>
+    <string name="login_fragment_title">Entrar</string>
+    <string name="register_toast_error">error ao cadastar</string>
+    <string name="loggin_state">Carregando...</string>
+    <string name="login_error_toast">Não foi posssível logar, tente novamente</string>
+    <string name="dashboard_error_toast_message">Falha ao carregar os dados</string>
+    <string name="highlights">Destaques</string>
+    <string name="theme_subscribers">4 pessoas</string>
+    <string name="theme_title">Motivação</string>
+    <string name="themes_subscribers_text">%1$s pessoas</string>
+    <string name="themes">Temas</string>
+    <string name="sleep">Sono</string>
+    <string name="see_all"><![CDATA[Ver tudo >]]></string>
+    <string name="theme_image_view_description">Foto de capa do thema</string>
+    <string name="theme_image_view_filter_description">Filtro utilizado na foto de capa do them</string>
+    <string name="description_use_terms">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </string>
+    <string name="description_privacy_policy">\n TITULARIDADE E CONTATO A Plataforma “WebApp Planeta PUCPR”, incluindo website e aplicativo, são de titularidade da ASSOCIAÇÃO PARANAENSE DE CULTURA - APC, instituição sem fins lucrativos, inscrita no CNPJ/MF sob o nº 76.659.820/0001-51, estabelecida na Rua Imaculada Conceição, nº 1155, Bairro Prado Velho, CEP 80.215-901, na cidade Curitiba/PR, mantenedora do PONTIFÍCIA UNIVERSIDADE CATÓLICA DO PARANÁ – CAMPUS CURITIBA, instituição de ensino superior, inscrita no CNPJ/MF sob o n.º 76.659.820/0003-13, estabelecida Rua Imaculada Conceição, nº 1155, Bairro Prado Velho, CEP 80.215-901, na cidade de Curitiba/Paraná Este instrumento se aplica a todo e qualquer usuário da Plataforma Planeta PUCPR.
+        \n \n ACEITAÇÃO DA “POLÍTICA DE PRIVACIDADE” O presente documento (Política de Privacidade) estabelece a PONTIFÍCIA UNIVERSIDADE CATÓLICA DO PARANÁ – PUCPR, por meio de sua Plataforma Planeta PUCPR web e/ou mobile, realizar a coleta, o armazenamento e o uso dos registros, dados pessoais e/ou informações de seus Usuários.
+        \n Todo e qualquer tipo de uso da Plataforma ou dos serviços oferecidos está condicionado à aceitação desta Política de Privacidade.
+        \n Por tal motivo, o simples ato de realização de cadastro e/ou, de qualquer forma e sob qualquer pretexto, uso do website, aplicativo, equivale à expressa concordância quanto ao conteúdo deste documento.
+        \n Assim, caso não concorde com o presente instrumento e não deseje estar vinculado às regras deste, não faça qualquer tipo de uso da respectiva Plataforma e website Planeta PUCPR.
+        \n \n 1. DADOS PARA CADASTRO
+        \n 1.1. Para utilização da Plataforma do Planeta PUCPR, poderá ser requisitada a realização de Cadastro.
+        \n As informações fornecidas serão armazenadas em um banco de dados sigiloso.
+        \n Associadas à senha, as informações fornecidas poderão ser utilizadas para fins de verificações de segurança, para login etc.
+        \n As informações solicitadas e/ou coletadas poderão variar, dentre as quais destacamos:
+        \n a. Nome \n b. E-mail \n c. CPF \n d. Câmpus de interesse (Curitiba, Maringá, Londrina, Toledo) \n e. Nome do colégio onde estuda \n f. Ano em que está estudando atualmente \n g. Criação se de senha
+        \n \n 2. TERMO DE CONSENTIMENTO ESTOU DE ACORDO em permitir que a PUCPR integrante do Grupo Marista, realize o tratamento dos meus dados pessoais listados nesse cadastro on-line para o fim de envio de informações sobre os cursos, áreas, eventos e ações da Universidade.
+        \n Declaro ainda que fui informado que o presente documento é aplicável exclusivamente para os fins descritos e visando à adequação das empresas acima relacionadas à Lei Geral de Proteção de Dados – Lei nº 13.709/2018. \n Este consentimento tem duração por 3 anos, a partir da presente autorização.
+        \n Por fim, tomei conhecimento que, com base no art. 18º da Lei, é meu direito como titular:
+        \n Confirmar da existência do tratamento; Acessar aos meus dados;
+        \n Solicitar correção de dados incompletos, inexatos ou desatualizados;
+        \n Solicitar anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade com o disposto em lei;
+        \n Revogar o presente consentimento; Obter Informação das entidades públicas e privadas com as quais o controlador realizou uso compartilhado de dados.
+        \n \n 3. SEGURANÇA E GUARDA DE INFORMAÇÕES 3.1. As informações coletadas pelo aplicativo são sigilosas e sujeitas a medidas de segurança e confidencialidade adequadas para impedir o acesso ou divulgação não autorizados, bem como alteração ou destruição dos dados indevidamente.
+        \n \n 4. DISPOSIÇÕES GERAIS
+        \n 4.1. A utilização do aplicativo implica no aceite, por parte dos usuários, das condições e termos desta política.
+        \n A PUCPR reserva-se o direito de alterar os termos desta Política de Privacidade a qualquer momento, mediante comunicação aos seus usuários por e-mail ou notificação do aplicativo.
+        \n \n Última versão: 17 de Agosto de 2020</string>
+    <string name="enter_on_group">Entrar no Grupo</string>
+    <string name="write_message">Escrever Mensagem</string>
+    <string name="last_answer">Ultima resposta do usuário</string>
+    <string name="your_groups">Seus Grupos</string>
+    <string name="online_profissionals">Profissionais online</string>
+    <string name="lasts_asnwers">Últimas respostas</string>
+    <string name="ckick_enter_on_group">Clique para entrar no grupo</string>
+    <string name="chat_me">Eu</string>
+    <string name="sending_toast">Enviando...</string>
+    <string name="insert_a_message">Insira uma mensagem</string>
+    <string name="search_for_groups">Buscar por grupos</string>
+    <string name="image_talk_ballon">Imagem de um balão de conversa</string>
+    <string name="search_for_group">Busque pelo grupo que deseja</string>
+</resources>

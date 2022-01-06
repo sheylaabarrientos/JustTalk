@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/user_photo_profile_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/item_user_photo_profile" />
+
+    <TextView
+        android:id="@+id/theme_title_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:layout_marginStart="@dimen/margin_92"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="(SONO)"
+        android:textColor="@color/blue_medium"
+        app:layout_constraintBottom_toBottomOf="@+id/user_photo_profile_recyclerView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name_user_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_bold"
+        android:layout_marginStart="@dimen/margin_8"
+        android:text="Dr. Silvia Lima"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/theme_title_textView"
+        app:layout_constraintStart_toEndOf="@+id/theme_title_textView"
+        app:layout_constraintTop_toTopOf="@+id/theme_title_textView" />
+
+    <TextView
+        android:id="@+id/lorem_ipsum_amswer_textView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:fontFamily="@font/gilroy_bold"
+        android:maxLines="1"
+        android:text="@string/last_answer"
+        android:textColor="@color/gray_dark"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/user_photo_profile_recyclerView"
+        app:layout_constraintStart_toStartOf="@+id/theme_title_textView" />
+
+    <TextView
+        android:id="@+id/hour_ago_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_bold"
+        android:layout_marginEnd="@dimen/margin_24"
+        android:text="10h atrás"
+        android:textColor="@color/gray_dark"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/name_user_textView"
+        app:layout_constraintEnd_toEndOf="@+id/user_photo_profile_recyclerView"
+        app:layout_constraintTop_toTopOf="@+id/name_user_textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/more_options_textView"
+            style="@style/textStyleTitleMoreOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_32"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:contentDescription="@string/more_options_app"
+            android:text="@string/more_options"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/use_terms_linearLayout"
+            android:layout_width="380dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="@dimen/margin_64"
+            android:background="@drawable/more_options_background"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/more_options_textView">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:background="@drawable/ic_google"
+                android:contentDescription="@string/use_terms" />
+
+            <TextView
+                style="@style/textStyleTitleMoreOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/more"
+                android:text="@string/use_terms" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/privacy_policy_linearLayout"
+            android:layout_width="380dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="@dimen/margin_24"
+            android:background="@drawable/more_options_background"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/use_terms_linearLayout">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:background="@drawable/ic_google__1_"
+                android:contentDescription="@string/privacy_policy" />
+
+            <TextView
+                style="@style/textStyleTitleMoreOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/more"
+                android:text="@string/privacy_policy" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/logout_linearLayout"
+            android:layout_width="380dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="@dimen/margin_24"
+            android:background="@drawable/more_options_background"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/privacy_policy_linearLayout">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:background="@drawable/ic_out"
+                android:contentDescription="@string/logout" />
+
+            <TextView
+                style="@style/textStyleTitleMoreOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/more"
+                android:text="@string/logout" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

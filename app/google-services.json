@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "488438887373",
+    "project_id": "justtalkandroid",
+    "storage_bucket": "justtalkandroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:488438887373:android:7011764744569d7e76ca84",
+        "android_client_info": {
+          "package_name": "com.jera.justtalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "488438887373-1gtvqh9ugngaejqt513fem5ms62r9vft.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkDjEf5m7a0TrsoT8jQ-tmO9XGqHwPUko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "488438887373-1gtvqh9ugngaejqt513fem5ms62r9vft.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinatorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="236dp"
+                android:fitsSystemWindows="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/black"
+                    app:expandedTitleMarginBottom="28dp"
+                    app:expandedTitleMarginStart="72dp">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="236dp"
+                        android:alpha="0.2"
+                        app:cardCornerRadius="4dp">
+
+                        <ImageView
+                            android:id="@+id/chat_group_banner_imageView"
+                            android:layout_width="match_parent"
+                            android:layout_height="236dp"
+                            android:adjustViewBounds="true"
+                            android:background="@color/white"
+                            android:contentDescription="@string/image_background_home"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/sono" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.appbar.MaterialToolbar
+                        android:id="@+id/chat_toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="236dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:menu="@menu/top_chat_app_bar"
+                        app:navigationIcon="@drawable/ic_back_group" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="236dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/title_theme_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginStart="@dimen/margin_16"
+                            android:layout_marginTop="@dimen/margin_8"
+                            android:fontFamily="@font/gilroy_extrabold"
+                            android:text="@string/sleep"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/mediumText_24"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/subscribers_theme_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginStart="@dimen/margin_16"
+                            android:fontFamily="@font/gilroy_regular"
+                            android:text="@string/theme_subscribers"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/tiny_tinyText_14" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="236dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/add_button_Button"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/margin_64"
+                            android:background="@drawable/ic_baseline_add_24"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/enter_to_group_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="@dimen/margin_16"
+                            android:layout_marginTop="@dimen/margin_64"
+                            android:fontFamily="@font/gilroy_regular"
+                            android:gravity="center"
+                            android:text="@string/enter_on_group"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/smallText_18" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chat_group_message_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:background="@color/white_gray"
+            app:layout_constraintBottom_toTopOf="@id/linearLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/coordinatorLayout"
+            tools:listitem="@layout/item_message" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/photo_profile_chat_imageView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginBottom="@dimen/margin_16"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_account_circle_24"
+                app:cornerRadius="50dp" />
+
+            <EditText
+                android:id="@+id/chat_group_add_text_editText"
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/margin_24"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/gilroy_regular"
+                android:hint="@string/write_message"
+                android:paddingStart="@dimen/margin_16" />
+
+            <Button
+                android:id="@+id/chat_group_send_message_button"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/ic_baseline_send_24" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/loadScreen"
+            layout="@layout/loadscreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

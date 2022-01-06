@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.jera.justtalk.registerfeature.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/action_homeFragment_to_userNameFragment"
+            app:destination="@id/userNameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userNameFragment"
+        android:name="com.jera.justtalk.registerfeature.UserNameFragment"
+        android:label="UserNameFragment"
+        tools:layout="@layout/username_fragment">
+        <action
+            android:id="@+id/action_userNameFragment_to_emailFragment"
+            app:destination="@id/emailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailFragment"
+        android:name="com.jera.justtalk.registerfeature.EmailFragment"
+        android:label="EmailFragment"
+        tools:layout="@layout/email_register">
+        <argument
+            android:name="user"
+            app:argType="com.jera.justtalk.model.User" />
+        <action
+            android:id="@+id/action_emailFragment_to_passwordFragment"
+            app:destination="@id/passwordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/passwordFragment"
+        android:name="com.jera.justtalk.registerfeature.PasswordFragment"
+        android:label="PasswordFragment"
+        tools:layout="@layout/password_fragment">
+        <argument
+            android:name="user"
+            app:argType="com.jera.justtalk.model.User" />
+        <action
+            android:id="@+id/action_passwordFragment_to_userPhotoFragment"
+            app:destination="@id/userPhotoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userPhotoFragment"
+        android:name="com.jera.justtalk.registerfeature.UserPhotoFragment"
+        android:label="userPhotoFragment"
+        tools:layout="@layout/user_photo_fragment">
+        <argument
+            android:name="user"
+            app:argType="com.jera.justtalk.model.User" />
+        <action
+            android:id="@+id/action_userPhotoFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/navgraph"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_userPhotoFragment_to_emailFragment"
+            app:destination="@id/emailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.jera.justtalk.dashboardfeature.DashboardFragment"
+        android:label="DashboardFragment"
+        tools:layout="@layout/dashboard_fragment">
+        <action
+            android:id="@+id/action_dashboardFragment_to_groupsFragment"
+            app:destination="@id/groupsFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_moreOptionsFragment"
+            app:destination="@id/moreOptionsFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_chatGroupFragment"
+            app:destination="@id/chatGroupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.jera.justtalk.registerfeature.ForgotPasswordFragment"
+        android:label="ForgotPasswordFragment"
+        tools:layout="@layout/forgot_password_fragment" >
+        <action
+            android:id="@+id/action_forgotPasswordFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moreOptionsFragment"
+        android:name="com.jera.justtalk.navigationbarfeature.MoreOptionsFragment"
+        android:label="MoreOptionsFragment"
+        tools:layout="@layout/more_options_fragment">
+        <action
+            android:id="@+id/action_moreOptionsFragment_to_useTermsFragment"
+            app:destination="@id/useTermsFragment" />
+        <action
+            android:id="@+id/action_moreOptionsFragment_to_privacyPolicyFragment"
+            app:destination="@id/privacyPolicyFragment" />
+        <action
+            android:id="@+id/action_moreOptionsFragment_to_groupsFragment"
+            app:destination="@id/groupsFragment" />
+        <action
+            android:id="@+id/action_moreOptionsFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/useTermsFragment"
+        android:name="com.jera.justtalk.navigationbarfeature.UseTermsFragment"
+        android:label="UseTermsFragment"
+        tools:layout="@layout/use_terms_fragment" />
+    <fragment
+        android:id="@+id/privacyPolicyFragment"
+        android:name="com.jera.justtalk.navigationbarfeature.PrivacyPolicyFragment"
+        android:label="PrivacyPolicyFragment"
+        tools:layout="@layout/privacy_policy_fragment" />
+    <fragment
+        android:id="@+id/groupsFragment"
+        android:name="com.jera.justtalk.navigationbarfeature.GroupsFragment"
+        android:label="GroupsFragment"
+        tools:layout="@layout/groups_fragment">
+
+        <action
+            android:id="@+id/action_groupsFragment_to_chatGroupFragment"
+            app:destination="@id/chatGroupFragment" />
+        <action
+            android:id="@+id/action_groupsFragment_to_groupsSearchFragment"
+            app:destination="@id/groupsSearchFragment" />
+        <action
+            android:id="@+id/action_groupsFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatGroupFragment"
+        android:name="com.jera.justtalk.chatfeature.ChatGroupFragment"
+        android:label="ChatGroupFragment"
+        tools:layout="@layout/chat_group_fragment">
+        <argument
+            android:name="theme"
+            app:argType="com.jera.justtalk.model.ThemeModel"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.jera.justtalk.loginfeature.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/login_fragment">
+        <action
+            android:id="@+id/action_loginFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:popUpTo="@id/navgraph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_loginFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+    </fragment><action android:id="@+id/action_global_loginFragment" app:destination="@id/loginFragment"/>
+    <fragment
+        android:id="@+id/groupsSearchFragment"
+        android:name="com.jera.justtalk.navigationbarfeature.GroupsSearchFragment"
+        android:label="GroupsSearchFragment"
+        tools:layout="@layout/groups_search_fragment">
+        <action
+            android:id="@+id/action_groupsSearchFragment_to_groupsFragment"
+            app:destination="@id/groupsFragment" />
+    </fragment><action android:id="@+id/action_global_groupsFragment2" app:destination="@id/groupsFragment"/><action android:id="@+id/action_global_groupsSearchFragment" app:destination="@id/groupsSearchFragment"/><action android:id="@+id/action_global_groupsFragment" app:destination="@id/groupsFragment"/>
+</navigation>
